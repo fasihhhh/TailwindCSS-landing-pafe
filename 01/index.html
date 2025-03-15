@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/output.css">
+    <title>Nike</title>
+</head>
+<body>
+    <div class="wrapper min-h-screen 0 flex flex-col"> 
+        <!-- Navigation bar starts  -->
+        <nav class="nav bg-white w-full h-[70px] flex flex-row justify-between fixed top-0 shadow-[10px_1px_20px_0px_black] ">
+            <div class="logo flex h-full justify-center items-center  w-[180px] gap-1 p-4 ">
+                <img src="/images/asset 0.png" alt="" height="20px" width="50px">
+                <p class="text-[1.2rem] font-medium ">ToDesktop</p>
+            </div>
+            <div class="navigation-list h-full hidden lg:block justify-center items-center w-[500px] ">
+                <ul class="ul-tag h-full items-center justify-evenly flex flex-row text-[1.1rem] font-medium  ">
+                    <li class="hover:text-blue-500 hover:cursor-pointer">Pricing</li>
+                    <li class="hover:text-blue-500 hover:cursor-pointer">Docs</li>
+                    <li class="hover:text-blue-500 hover:cursor-pointer">ChangeLog</li>
+                    <li class="hover:text-blue-500 hover:cursor-pointer">Blog</li>
+                    <li class="hover:text-blue-500 hover:cursor-pointer">Login</li>
+                </ul>
+            </div>
+            <div class="electro-button hidden lg:flex flex-row h-full w-[300px] justify-center items-center  ml-[-90px] ">
+                <button class="flex gap-[10px] h-[40px] w-[250px] outline-1 p-2 items-center rounded-[10px] hover:outline-2 hover:cursor-pointer">
+                    <img src="/images/atomic.png" alt="" width="20px" height="20px">
+                    <p class="text-[1.1rem] font-medium">Electron-Developers</p>
+                    <img src="/images/right-arrow.png" alt="" width="20px" height="20px">
+                </button>
+            </div>
+            <!-- <div class="ham p-4 block lg:hidden">
+                <p class="text-[1.7rem]">☰</p>
+            </div> -->
+            <!-- Peer code from gpt  -->
+            <div class="relative lg:hidden">
+                <input type="checkbox" id="menu-toggle" class="peer hidden">
+                <label for="menu-toggle" class="ham p-4 block lg:hidden cursor-pointer">
+                    <p class="text-[1.7rem]">☰</p>
+                </label>
+                <!-- Mobile Menu (Controlled via Peer) -->
+                <div class="absolute right-0 top-[70px] w-[200px] bg-blue-100 shadow-md hidden peer-checked:block">
+                    <ul class="flex flex-col text-center p-4 space-y-2">
+                        <li class=" hover:cursor-pointer border m-2 p-1 text-blue-600 ">Pricing</li>
+                        <li class=" hover:cursor-pointer border m-2 p-1 text-blue-600 ">Docs</li>
+                        <li class=" hover:cursor-pointer border m-2 p-1 text-blue-600 ">ChangeLog</li>
+                        <li class=" hover:cursor-pointer border m-2 p-1 text-blue-600 ">Blog</li>
+                        <li class=" hover:cursor-pointer border m-2 p-1 text-blue-600 ">Login</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Peer code from gpt  -->
+        </nav>
+        <!-- Navigation bar ends  -->
+        <!-- main starts here  -->
+         <main class="main min-h-screen  w-full flex flex-col justify-center items-center p-2 bg-white ">
+            <!-- section 01 starts (Front hero section)  -->
+            <section class="section-01 w-full max-w-[1500px]  h-[650px] sm:h-[620px] flex flex-col items-start md:items-center justify-evenly gap-0 mt-[80px] p-3 bg-gradient-to-b from-purple-50 via-orange-50 to-transparent ">
+                <div class="button sm:shadow-[1px_1px_10px_1px_black]  flex flex-row flex-wrap shrink gap-2 bg-amber-100 p-[6px] pr-4 pl-4 mt-[-20px] w-fit md:w-[320px] justify-center items-center rounded-[10px] sm:p-1 cursor-pointer hover:-translate-y-0.5 outline-1 outline-amber-300 ">
+                    <p class="text-[1rem] tex">v0.21.1.03:Find-in-page bug fixes</p>
+                    <img src="/images/right-arrow.png" alt="" width="20px" height="20px">
+                </div>
+                <div class="devices  items-center justify-center hidden md:flex flex-row gap-6 p-4 text-[1.1rem] ">
+                    <p>Code Optional</p>
+                    <p>Drag&Drop Builder</p>
+                    <p>Windows,Mac,Linux</p>
+                </div>
+                <div class="text  flex justify-center w-full h-fit items-start md:items-center text-left md:text-center  font-semibold flex-col gap-0 md:m-[-20px]  p-2">
+                    <p class=" text-[2.6rem]/[47px] md:text-[4rem] font-medium mt-[-10px]">Web app to desktop</p><br>
+                    <p class=" text-[2.6rem] md:text-[4rem] font-medium mt-[-30px] ">app in minutes</p>
+                </div>
+                <div class="text w-full md:w-[600px] flex justify-center items-center text-left md:text-center h-fit md:mt-1">
+                    <p class=" text-[1.3rem] md:text-[1.5rem] mt-[-20px]">Take your web app codebase and transform it into a cross platform desktop app with native functionality.</p>
+                </div>
+                <div class="buttons  flex flex-col gap-3 p-2 justify-center items-center bg--50 md:flex-row w-full  ">
+                    <button class="bg-blue-700 w-full  md:w-[170px] font-bold text-white p-3 text-[1.1rem] rounded-[10px]  cursor-pointer hover:opacity-90" >Download Now</button>
+                    <button class= "bg-white w-full  md:w-[150px] font-medium text-black p-3 text-[1.1rem] rounded-[10px] outline  hover:outline-2 cursor-pointer">Read Docs</button>
+                </div>
+                <div class="app-powered-by flex w-full items-center justify-center text-center ">
+                    <img class="mt-3" src="/images/asset 2.svg" alt="">
+                    <p class="text-[1.2rem] font-medium">APPS POWERED BY TODESKTOP</p>
+                    <img class="mt-3" src="/images/asset 2 (1).svg" alt="">
+                </div>
+            </section>
+            <!-- section 01 ends (Front hero section)  -->
+             <!-- sectiom 02 starts (Scrolls) -->
+            <section class="section-02  w-full md:w-[90%] h-[500px] md:h-[370px]  flex flex-col m-5 justify-center items-center p-3">
+                <div class="banner w-full flex h-[50%]  p-3 gap-5 overflow-y-auto overflow-x-auto justify-center ">
+                    <div class="div flex justify-center items-center flex-col bg-amber-50 p-4 rounded-xl w-[100px] h-[120px] sm:w-[130px] outline-1 outline-amber-200 flex-nowrap shrink-0 ">
+                        <img src="/banner1-images/asset 4.png" alt="" height="75px" width="75px">
+                        <p class="text-[1.1rem] font-medium ">LifeAt</p>
+                    </div>
+                    <div class="div flex justify-center items-center flex-col bg-amber-50 p-4 rounded-xl w-[100px] h-[120px] sm:w-[130px] outline-1 outline-amber-200 flex-nowrap shrink-0">
+                        <img src="/banner1-images/asset 5.png" alt="" height="75px" width="75px">
+                        <p class="text-[1.1rem] font-medium m-1">Convoy</p>
+                    </div>
+                    <div class="div flex justify-center items-center flex-col bg-amber-50 p-4 rounded-xl w-[100px] h-[120px] sm:w-[130px] outline-1 outline-amber-200 flex-nowrap shrink-0">
+                        <img src="/banner1-images/asset 6.png" alt="" height="75px" width="75px">
+                        <p class="text-[1.1rem] font-medium m-1">Morgan</p>
+                    </div>
+                    <div class="div flex justify-center items-center flex-col bg-amber-50 p-4 rounded-xl w-[100px] h-[120px] sm:w-[130px] outline-1 outline-amber-200 flex-nowrap shrink-0">
+                        <img src="/banner1-images/asset 7.png" alt="" height="75px" width="75px">
+                        <p class="text-[1.1rem] font-medium m-1">Campsite</p>
+                    </div>
+                    <div class="div flex justify-center items-center flex-col bg-amber-50 p-4 rounded-xl w-[100px] h-[120px] sm:w-[130px] outline-1 outline-amber-200 flex-nowrap shrink-0">
+                        <img src="/banner1-images/asset 8.png" alt="" height="75px" width="75px">
+                        <p class="text-[1.1rem] font-medium m-1">Rise</p>
+                    </div>
+                    <div class="div flex justify-center items-center flex-col bg-amber-50 p-4 rounded-xl w-[100px] h-[120px] sm:w-[130px] outline-1 outline-amber-200 flex-nowrap shrink-0">
+                        <img src="/banner1-images/asset 9.png" alt="" height="75px" width="75px">
+                        <p class="text-[1.1rem] font-medium m-1">ClickUp</p>
+                    </div>
+                    <div class="div hidden md:flex justify-center items-center flex-col bg-amber-50 p-4 rounded-xl w-[100px] h-[120px] sm:w-[130px] outline-1 outline-amber-200 flex-nowrap shrink-0">
+                        <img src="/banner1-images/asset 10.png" alt="" height="75px" width="75px">
+                        <p class="text-[1.1rem] font-medium m-1">Notion</p>
+                    </div>
+                    <div class="div hidden md:flex justify-center items-center flex-col bg-amber-50 p-4 rounded-xl w-[100px] h-[120px] sm:w-[130px] outline-1 outline-amber-200 flex-nowrap shrink-0">
+                        <img src="/banner1-images/asset 11.png" alt="" height="75px" width="75px">
+                        <p class="text-[1.1rem] font-medium m-1">Sunsama</p>
+                    </div>
+                    <div class="div hidden md:flex justify-center items-center flex-col bg-amber-50 p-4 rounded-xl w-[100px] h-[120px] sm:w-[130px] outline-1 outline-amber-200 flex-nowrap shrink-0">
+                        <img src="/banner1-images/asset 12.png" alt="" height="75px" width="75px">
+                        <p class="text-[1.1rem] font-medium m-1">Beeper</p>
+                    </div>
+                    <div class="div hidden md:flex justify-center items-center flex-col bg-amber-50 p-4 rounded-xl w-[100px] h-[120px] sm:w-[130px] outline-1 outline-amber-200 flex-nowrap shrink-0">
+                        <img src="/banner1-images/asset 13.png" alt="" height="75px" width="75px">
+                        <p class="text-[1.1rem] font-medium m-1">Cal</p>
+                    </div>
+                    <div class="div hidden md:flex justify-center items-center flex-col bg-amber-50 p-4 rounded-xl w-[100px] h-[120px] sm:w-[130px] outline-1 outline-amber-200 flex-nowrap shrink-0">
+                        <img src="/banner1-images/asset 14.png" alt="" height="75px" width="75px">
+                        <p class="text-[1.1rem] font-medium m-1">Webstudio</p>
+                    </div>
+                </div>
+                <!------------------------------Second banner here-------------------------------------------->
+                <div class="banner w-full flex h-[50%]  p-3 gap-5 overflow-y-auto overflow-x-auto justify-center">
+                    <div class="div flex justify-center items-center flex-col bg-amber-50 p-4 rounded-xl w-[100px] h-[120px] sm:w-[130px] outline-1 outline-amber-200 flex-nowrap shrink-0 ">
+                        <img src="/banner2-images/asset 16.png" alt="" height="75px" width="75px">
+                        <p class="text-[1.1rem] font-medium ">LifeAt</p>
+                    </div>
+                    <div class="div flex justify-center items-center flex-col bg-amber-50 p-4 rounded-xl w-[100px] h-[120px] sm:w-[130px] outline-1 outline-amber-200 flex-nowrap shrink-0">
+                        <img src="/banner2-images/asset 17.png" alt="" height="75px" width="75px">
+                        <p class="text-[1.1rem] font-medium m-1">Convoy</p>
+                    </div>
+                    <div class="div flex justify-center items-center flex-col bg-amber-50 p-4 rounded-xl w-[100px] h-[120px] sm:w-[130px] outline-1 outline-amber-200 flex-nowrap shrink-0">
+                        <img src="/banner2-images/asset 18.png" alt="" height="75px" width="75px">
+                        <p class="text-[1.1rem] font-medium m-1">Morgan</p>
+                    </div>
+                    <div class="div flex justify-center items-center flex-col bg-amber-50 p-4 rounded-xl w-[100px] h-[120px] sm:w-[130px] outline-1 outline-amber-200 flex-nowrap shrink-0">
+                        <img src="/banner2-images/asset 19.png" alt="" height="75px" width="75px">
+                        <p class="text-[1.1rem] font-medium m-1">Campsite</p>
+                    </div>
+                    <div class="div flex justify-center items-center flex-col bg-amber-50 p-4 rounded-xl w-[100px] h-[120px] sm:w-[130px] outline-1 outline-amber-200 flex-nowrap shrink-0">
+                        <img src="/banner2-images/asset 20.png" alt="" height="75px" width="75px">
+                        <p class="text-[1.1rem] font-medium m-1">Rise</p>
+                    </div>
+                    <div class="div flex justify-center items-center flex-col bg-amber-50 p-4 rounded-xl w-[100px] h-[120px] sm:w-[130px] outline-1 outline-amber-200 flex-nowrap shrink-0">
+                        <img src="/banner2-images/asset 21.png" alt="" height="75px" width="75px">
+                        <p class="text-[1.1rem] font-medium m-1">ClickUp</p>
+                    </div>
+                    <div class="div hidden md:flex justify-center items-center flex-col bg-amber-50 p-4 rounded-xl  w-[100px] h-[120px] sm:w-[130px] outline-1 outline-amber-200 flex-nowrap shrink-0">
+                        <img src="/banner2-images/asset 22.png" alt="" height="75px" width="75px">
+                        <p class="text-[1.1rem] font-medium m-1">Notion</p>
+                    </div>
+                    <div class="div hidden md:flex justify-center items-center flex-col bg-amber-50 p-4 rounded-xl  w-[100px] h-[120px] sm:w-[130px] outline-1 outline-amber-200 flex-nowrap shrink-0">
+                        <img src="/banner2-images/asset 23.png" alt="" height="75px" width="75px">
+                        <p class="text-[1.1rem] font-medium m-1">Sunsama</p>
+                    </div>
+                    <div class="div hidden md:flex justify-center items-center flex-col bg-amber-50 p-4 rounded-xl  w-[100px] h-[120px] sm:w-[130px] outline-1 outline-amber-200 flex-nowrap shrink-0">
+                        <img src="/banner2-images/asset 24.png" alt="" height="75px" width="75px">
+                        <p class="text-[1.1rem] font-medium m-1">Beeper</p>
+                    </div>
+                    <div class="div hidden md:flex justify-center items-center flex-col bg-amber-50 p-4 rounded-xl  w-[100px] h-[120px] sm:w-[130px] outline-1 outline-amber-200 flex-nowrap shrink-0">
+                        <img src="/banner2-images/asset 25.png" alt="" height="75px" width="75px">
+                        <p class="text-[1.1rem] font-medium m-1">Cal</p>
+                    </div>
+                    <div class="div hidden md:flex justify-center items-center flex-col bg-amber-50 p-4 rounded-xl  w-[100px] h-[120px] sm:w-[130px] outline-1 outline-amber-200 flex-nowrap shrink-0">
+                        <img src="/banner2-images/asset 26.png" alt="" height="75px" width="75px">
+                        <p class="text-[1.1rem] font-medium m-1">Webstudio</p>
+                    </div>
+                </div>
+                <!-- ---------------------third banner ends here ------------------ -->
+                <div class="banner w-full flex h-[50%]  p-3 gap-5 overflow-y-auto overflow-x-auto justify-center md:hidden ">
+                    <div class="div flex justify-center items-center flex-col bg-amber-50 p-4 rounded-xl w-[100px] h-[120px] sm:w-[130px] outline-1 outline-amber-200 flex-nowrap shrink-0">
+                        <img src="/banner2-images/asset 21.png" alt="" height="75px" width="75px">
+                        <p class="text-[1.1rem] font-medium m-1">ClickUp</p>
+                    </div>
+                    <div class="div flex justify-center items-center flex-col bg-amber-50 p-4 rounded-xl w-[100px] h-[120px] sm:w-[130px] outline-1 outline-amber-200 flex-nowrap shrink-0">
+                        <img src="/banner2-images/asset 22.png" alt="" height="75px" width="75px">
+                        <p class="text-[1.1rem] font-medium m-1">Notion</p>
+                    </div>
+                    <div class="div flex justify-center items-center flex-col bg-amber-50 p-4 rounded-xl w-[100px] h-[120px] sm:w-[130px] outline-1 outline-amber-200 flex-nowrap shrink-0">
+                        <img src="/banner2-images/asset 23.png" alt="" height="75px" width="75px">
+                        <p class="text-[1.1rem] font-medium m-1">Sunsama</p>
+                    </div>
+                    <div class="div flex justify-center items-center flex-col bg-amber-50 p-4 rounded-xl w-[100px] h-[120px] sm:w-[130px] outline-1 outline-amber-200 flex-nowrap shrink-0">
+                        <img src="/banner2-images/asset 24.png" alt="" height="75px" width="75px">
+                        <p class="text-[1.1rem] font-medium m-1">Beeper</p>
+                    </div>
+                    <div class="div flex justify-center items-center flex-col bg-amber-50 p-4 rounded-xl w-[100px] h-[120px] sm:w-[130px] outline-1 outline-amber-200 flex-nowrap shrink-0">
+                        <img src="/banner2-images/asset 25.png" alt="" height="75px" width="75px">
+                        <p class="text-[1.1rem] font-medium m-1">Cal</p>
+                    </div>
+                    <div class="div flex justify-center items-center flex-col bg-amber-50 p-4 rounded-xl w-[100px] h-[120px] sm:w-[130px] outline-1 outline-amber-200 flex-nowrap shrink-0">
+                        <img src="/banner2-images/asset 26.png" alt="" height="75px" width="75px">
+                        <p class="text-[1.1rem] font-medium m-1">Webstudio</p>
+                    </div>
+                </div>
+            </section>
+            <!-- section 02 ends here  -->
+             <!-- section 03 starts (How it works)  -->
+             <section class="section-03 w-full max-w-[1400px] h-fit p-3 flex justify-center sm:justify-start ">
+                    <p class="text-[2.5rem] font-medium text-slate-800">How It works</p>
+             </section>
+             <!-- section 03 ends here -->
+            <!-- section 03 starts (Bootstrap cards)   -->
+            <section class="w-full  h-fit lg:h-[1500px] p-4 flex flex-col items-center justify-evenly">
+                <!-- card 01  -->
+                <div class="card  flex-col lg:flex-row w-full xl:w-[1250px] bg- h-[800px] md:h-[750px] lg:h-[460px] border border-slate-400 rounded-2xl flex justify-around md:justify-center lg:justify-around items-center p-5 shrink">
+                    <div class="description flex flex-col gap-1 w-full  lg:w-[50%] h-fit lg:h-full p-2 ">
+                        <p class="bg-[#fefce8] text-[#854d0e] text-[1rem]  text-center  h-[30px] w-[62px] outline outline-[#854d0e] border-0 rounded-[7px] mb-3 ml-1   ">Step 1</p>
+                        <p class="text-[2rem]/[45px] md:text-[2.5rem] font-medium">Bootstrap straight from your web app</p>
+                        <P class="text-[1rem] h-fit md:text-[1.2rem] font-light">Copy and paste your web app url into ToDesktop. Customise your app design, app icon and window frame UI with no code.</P>
+                        <div class="list flex flex-row gap-[20px] sm:gap-[50px] xl:gap-[100px] w-full justify-center items-center p-2 xl:p-4 ">
+                            <ul class="">
+                                <li class="flex flex-row justify-center items-center p-1"><img src="/images/check.png" alt="" width="30px" height="30px"><p class="text-[0.9rem] border-b font-light md:text-[1.1rem] hover:border-blue-500 hover:border-b-2">Multiple Window</p></li>
+                                <li class="flex flex-row justify-center items-center p-1"><img src="/images/check.png" alt="" width="30px" height="30px"><p class="text-[0.9rem] border-b font-light md:text-[1.1rem] hover:border-blue-500 hover:border-b-2">Multiple Window</p></li>
+                                <li class="flex flex-row justify-center items-center p-1"><img src="/images/check.png" alt="" width="30px" height="30px"><p class="text-[0.9rem] border-b font-light md:text-[1.1rem] hover:border-blue-500 hover:border-b-2">Multiple Window</p></li>
+                                <li class="hidden sm:flex flex-row justify-center items-center p-1"><img src="/images/check.png" alt="" width="30px" height="30px"><p class="hidden sm:flex text-[0.9rem] border-b-1 font-light md:text-[1.1rem] hover:border-blue-500  hover:border-b-2">Multiple Window</p></li>
+                            </ul>
+                            <ul class="">
+                                <li class="flex flex-row justify-center items-center p-1"><img src="/images/check.png" alt="" width="30px" height="30px"><p class="text-[0.9rem] border-b font-light md:text-[1.1rem] hover:border-blue-500 hover:border-b-2">Multiple Window</p></li>
+                                <li class="flex flex-row justify-center items-center p-1"><img src="/images/check.png" alt="" width="30px" height="30px"><p class="text-[0.9rem] border-b font-light md:text-[1.1rem] hover:border-blue-500 hover:border-b-2">Multiple Window</p></li>
+                                <li class="flex flex-row justify-center items-center p-1"><img src="/images/check.png" alt="" width="30px" height="30px"><p class="text-[0.9rem] border-b font-light md:text-[1.1rem] hover:border-blue-500 hover:border-b-2">Multiple Window</p></li>
+                                <li class="hidden sm:flex flex-row justify-center items-center p-1"><img src="/images/check.png" alt="" width="30px" height="30px"><p class="hidden sm:flex text-[0.9rem] border-b-1 font-light md:text-[1.1rem] hover:border-blue-500 hover:border-b-2 ">Multiple Window</p></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="img flex shrink w-full items-center justify-center  lg:w-[50%] h-[60%]  lg:h-[80%]">
+                        <img src="/images/asset 66.svg" alt="">
+                    </div>
+                </div>
+                <!-- card  02  -->
+                <div class="card  flex-col lg:flex-row w-full xl:w-[1250px]  h-[800px] md:h-[750px] lg:h-[460px] border border-slate-400 rounded-2xl flex justify-around md:justify-center lg:justify-around items-center p-5 shrink  m-5">
+                    <div class="description flex flex-col gap-1 w-full  lg:w-[50%] h-fit lg:h-full p-2 ">
+                        <p class="bg-[#fefce8] text-[#854d0e] text-[1rem]  text-center  h-[30px] w-[62px] outline outline-[#854d0e] border-0 rounded-[7px] mb-3 ml-1   ">Step 2</p>
+                        <p class="text-[2rem]/[45px] md:text-[2.5rem] font-medium">Bootstrap straight from your web app</p>
+                        <P class="text-[1rem] md:text-[1.2rem] font-light">Copy and paste your web app url into ToDesktop. Customise your app design, app icon and window frame UI with no code.</P>
+                        <div class="list flex flex-row gap-[20px] sm:gap-[50px] xl:gap-[100px] w-full justify-center items-center p-2 xl:p-4 ">
+                            <ul class="">
+                                <li class="flex flex-row justify-center items-center p-1"><img src="/images/check.png" alt="" width="30px" height="30px"><p class="text-[0.9rem] border-b font-light md:text-[1.1rem] hover:border-blue-500 hover:border-b-2">Multiple Window</p></li>
+                                <li class="flex flex-row justify-center items-center p-1"><img src="/images/check.png" alt="" width="30px" height="30px"><p class="text-[0.9rem] border-b font-light md:text-[1.1rem] hover:border-blue-500 hover:border-b-2">Multiple Window</p></li>
+                                <li class="flex flex-row justify-center items-center p-1"><img src="/images/check.png" alt="" width="30px" height="30px"><p class="text-[0.9rem] border-b font-light md:text-[1.1rem] hover:border-blue-500 hover:border-b-2">Multiple Window</p></li>
+                                <li class="hidden sm:flex flex-row justify-center items-center p-1"><img src="/images/check.png" alt="" width="30px" height="30px"><p class="hidden sm:flex text-[0.9rem] border-b-1 font-light md:text-[1.1rem] hover:border-blue-500  hover:border-b-2">Multiple Window</p></li>
+                            </ul>
+                            <ul class="">
+                                <li class="flex flex-row justify-center items-center p-1"><img src="/images/check.png" alt="" width="30px" height="30px"><p class="text-[0.9rem] border-b font-light md:text-[1.1rem] hover:border-blue-500 hover:border-b-2">Multiple Window</p></li>
+                                <li class="flex flex-row justify-center items-center p-1"><img src="/images/check.png" alt="" width="30px" height="30px"><p class="text-[0.9rem] border-b font-light md:text-[1.1rem] hover:border-blue-500 hover:border-b-2">Multiple Window</p></li>
+                                <li class="flex flex-row justify-center items-center p-1"><img src="/images/check.png" alt="" width="30px" height="30px"><p class="text-[0.9rem] border-b font-light md:text-[1.1rem] hover:border-blue-500 hover:border-b-2">Multiple Window</p></li>
+                                <li class="hidden sm:flex flex-row justify-center items-center p-1"><img src="/images/check.png" alt="" width="30px" height="30px"><p class="hidden sm:flex text-[0.9rem] border-b-1 font-light md:text-[1.1rem] hover:border-blue-500 hover:border-b-2 ">Multiple Window</p></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="img flex shrink w-full items-center justify-center  lg:w-[50%] h-[60%]  lg:h-[80%] ">
+                        <img src="/images/asset 66.svg" alt="" class="flex shrink" >
+                    </div>
+                </div>
+                <!-- card  03  -->
+                <div class="card  flex-col lg:flex-row w-full xl:w-[1250px]  h-[800px] md:h-[750px] lg:h-[460px] border border-slate-400 rounded-2xl flex justify-around md:justify-center lg:justify-around items-center p-5 shrink">
+                    <div class="description flex flex-col gap-1 w-full  lg:w-[50%] h-fit lg:h-full p-2 ">
+                        <p class="bg-[#fefce8] text-[#854d0e] text-[1rem]  text-center  h-[30px] w-[62px] outline outline-[#854d0e] border-0 rounded-[7px] mb-3 ml-1   ">Step 3</p>
+                        <p class="text-[2rem]/[45px] md:text-[2.5rem] font-medium">Bootstrap straight from your web app</p>
+                        <P class="text-[1rem] md:text-[1.2rem] font-light">Copy and paste your web app url into ToDesktop. Customise your app design, app icon and window frame UI with no code.</P>
+                        <div class="list flex flex-row gap-[20px] sm:gap-[50px] xl:gap-[100px] w-full justify-center items-center p-2 xl:p-4 ">
+                            <ul class="">
+                                <li class="flex flex-row justify-center items-center p-1"><img src="/images/check.png" alt="" width="30px" height="30px"><p class="text-[0.9rem] border-b font-light md:text-[1.1rem] hover:border-blue-500 hover:border-b-2">Multiple Window</p></li>
+                                <li class="flex flex-row justify-center items-center p-1"><img src="/images/check.png" alt="" width="30px" height="30px"><p class="text-[0.9rem] border-b font-light md:text-[1.1rem] hover:border-blue-500 hover:border-b-2">Multiple Window</p></li>
+                                <li class="flex flex-row justify-center items-center p-1"><img src="/images/check.png" alt="" width="30px" height="30px"><p class="text-[0.9rem] border-b font-light md:text-[1.1rem] hover:border-blue-500 hover:border-b-2">Multiple Window</p></li>
+                                <li class="hidden sm:flex flex-row justify-center items-center p-1"><img src="/images/check.png" alt="" width="30px" height="30px"><p class="hidden sm:flex text-[0.9rem] border-b-1 font-light md:text-[1.1rem] hover:border-blue-500  hover:border-b-2">Multiple Window</p></li>
+                            </ul>
+                            <ul class="">
+                                <li class="flex flex-row justify-center items-center p-1"><img src="/images/check.png" alt="" width="30px" height="30px"><p class="text-[0.9rem] border-b font-light md:text-[1.1rem] hover:border-blue-500 hover:border-b-2">Multiple Window</p></li>
+                                <li class="flex flex-row justify-center items-center p-1"><img src="/images/check.png" alt="" width="30px" height="30px"><p class="text-[0.9rem] border-b font-light md:text-[1.1rem] hover:border-blue-500 hover:border-b-2">Multiple Window</p></li>
+                                <li class="flex flex-row justify-center items-center p-1"><img src="/images/check.png" alt="" width="30px" height="30px"><p class="text-[0.9rem] border-b font-light md:text-[1.1rem] hover:border-blue-500 hover:border-b-2">Multiple Window</p></li>
+                                <li class="hidden sm:flex flex-row justify-center items-center p-1"><img src="/images/check.png" alt="" width="30px" height="30px"><p class="hidden sm:flex text-[0.9rem] border-b-1 font-light md:text-[1.1rem] hover:border-blue-500 hover:border-b-2 ">Multiple Window</p></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="img flex shrink w-full items-center justify-center  lg:w-[50%] h-[60%]  lg:h-[80%] ">
+                        <img src="/images/asset 66.svg" alt="">
+                    </div>
+                </div>
+            </section>
+            <!-- section 03 ends here  -->
+             <!-- section 04 starts (ToDesktop handles the details)  -->
+            <section class="section-03 w-full lg:w-[1000px] h-fit p-6 flex justify-center sm:justify-start">
+                <p class="text-[2.5rem] font-medium text-slate-800">ToDesktop handles the details</p>
+            </section>
+            <!-- setion 04 ends  -->
+             <!-- section 05 start  (Native Notification)-->
+              <section class=" h-fit w-full max-w-[1700px]">
+                <div class="flex flex-col  md:grid grid-cols-3 gap-8 justify-center items-center p-4 w-full ">
+                    <div class="divs bg-white border border-slate-400 w-full h-fit p-4 md:p-6 flex justify-center items-center flex-col gap-6 row-start-1 row-end-2 rounded-2xl  hover:bg-gradient-to-b from-purple-50 via-orange-50 to-transparent cursor-pointer" >
+                        <p class="text-[1.6rem] font-medium">Native Notifications</p>
+                        <img src="/images/asset 37 (1).png" alt="">
+                    </div>
+                    <div class="divs bg-white border border-slate-400 h-fit p-4 md:p-6 flex justify-center items-center flex-col gap-6 row-start-1 row-end-3 rounded-2xl hover:bg-gradient-to-b from-purple-50 via-orange-50 to-transparent cursor-pointer">
+                        <p class="text-[1.6rem] font-medium">Native Notifications</p>
+                        <p class="font-light text-[1.2rem]">We'll ensure the underlying browser is up to date and deliver performance improvements, security patches, & additional features.</p>
+                        <img src="/images/asset 38 (1).png" alt="">
+                    </div>
+                    <div class="divs bg-white border border-slate-400 w-full h-fit p-4 md:p-6 flex justify-center items-center flex-col gap-6 row-start-1 row-end-2 rounded-2xl hover:bg-gradient-to-b from-purple-50 via-orange-50 to-transparent cursor-pointer">
+                        <p class="text-[1.6rem] font-medium">Native Notifications</p>
+                        <img src="/images/asset 39.png" alt="">
+                    </div>
+                    <div class="divs  bg-white border border-slate-400 h-fit p-4 md:p-6 flex justify-center items-center flex-col gap-6 row-start-2 row-end-4 rounded-2xl hover:bg-gradient-to-b from-purple-50 via-orange-50 to-transparent cursor-pointer">
+                        <p class="text-[1.6rem] font-medium">Native Notifications</p>
+                        <p class="font-light text-[1.2rem]">We'll ensure the underlying browser is up to date and deliver performance improvements, security patches, & additional features.</p>
+                        <img src="/images/asset 40.png" alt="">
+                    </div>                    
+                    <div class="divs bg-white border border-slate-400 w-full h-fit p-4 md:p-6 flex justify-center items-center flex-col gap-6 row-start-3 row-end-4 rounded-2xl hover:bg-gradient-to-b from-purple-50 via-orange-50 to-transparent cursor-pointer" >
+                        <p class="text-[1.6rem] font-medium">Native Notifications</p>
+                        <img src="/images/asset 37 (1).png" alt="">
+                    </div>                    
+                    <div class="divs bg-white border border-slate-400 h-fit p-4 md:p-6 flex justify-center items-center flex-col gap-6 row-start-2 row-end-4 rounded-2xl hover:bg-gradient-to-b from-purple-50 via-orange-50 to-transparent cursor-pointer">
+                        <p class="text-[1.6rem] font-medium">Native Notifications</p>
+                        <p class="font-light text-[1.2rem]">We'll ensure the underlying browser is up to date and deliver performance improvements, security patches, & additional features.</p>
+                        <img src="/images/asset 38 (1).png" alt="">
+                    </div>                
+                </div>
+              </section>
+            <!-- section 05 ends -->
+             <!-- section 06 starts (scroll)  -->
+              <section class="overflow-auto flex justify-center items-center w-full xl:w-[1300px] mt-[50px] mb-[50px]  ">
+                <div class="banner flex flex-row w-fit h-[100px] border border-slate-400 rounded-[10px] gap-4 overflow-y-auto overflow-x-auto bg-white">
+                    <div class="div flex flex-row  w-[250px] flex-nowrap justify-center items-center gap-5 shrink-0">
+                        <p class="text-[3rem] mt-[-30px]">.</p>
+                        <p class="text-[1.4rem] font-medium">Custom Menu</p>
+                    </div>
+                    <div class="div flex flex-row  w-[270px] flex-nowrap justify-center items-center gap-5 shrink-0">
+                        <p class="text-[3rem] mt-[-30px]">.</p>
+                        <p class="text-[1.4rem] font-medium">Multi-Window Support</p>
+                    </div>
+                    <div class="div flex flex-row  w-[130px] flex-nowrap justify-center items-center gap-5 shrink-0">
+                        <p class="text-[3rem] mt-[-30px]">.</p>
+                        <p class="text-[1.4rem] font-medium">Trays</p>
+                    </div>
+                    <div class="div flex flex-row  w-[250px] flex-nowrap justify-center items-center gap-5 shrink-0">
+                        <p class="text-[3rem] mt-[-30px]">.</p>
+                        <p class="text-[1.4rem] font-medium">Deep Linking</p>
+                    </div>
+                    <div class="div flex flex-row  w-[250px] flex-nowrap justify-center items-center gap-5 shrink-0">
+                        <p class="text-[3rem] mt-[-30px]">.</p>
+                        <p class="text-[1.4rem] font-medium">Lauch a StartUp</p>
+                    </div>
+                    <div class="div flex flex-row  w-[190px] flex-nowrap justify-center items-center gap-5 shrink-0">
+                        <p class="text-[3rem] mt-[-30px]">.</p>
+                        <p class="text-[1.4rem] font-medium">Offline Support</p>
+                    </div>
+                    <div class="div flex flex-row  w-[210px] flex-nowrap justify-center items-center gap-5 shrink-0">
+                        <p class="text-[3rem] mt-[-30px]">.</p>
+                        <p class="text-[1.4rem] font-medium">Analytics</p>
+                    </div>
+                </div>
+              </section>
+              <!-- section 06 ends  -->
+               <!-- section 07 starts  -->
+            <section class="section-03 w-full max-w-[1500px] h-fit p-6 flex justify-center sm:justify-start  ">
+                <p class="text-[2.5rem] font-medium text-slate-800">Customer stories</p>
+            </section>
+               <!-- section 07 ends  -->
+               <!-- section 08 starts (Clickup cards in grid )  -->
+                <section class="b h-fit w-full max-w-[1700px] justify-center items-center flex">
+                    <div class="gridDiv flex flex-col w-full  max-w-[1450px] md:grid grid-cols-3 gap-8 justify-center items-center p-4 ">
+                                    <!-- first clikup starts here  -->
+                        <div class="clickup bg-white flex flex-col md:flex-row w-full h-fit p-4 md:p-6  border border-slate-400 justify-evenly items-center gap-6 row-start-1 row-end-2 col-start-1 col-end-4 rounded-2xl ">
+                            <div class="description flex flex-col h-full gap-6 justify-evenly w-[85%] ">
+                                <img src="/images/asset 44.svg" alt="" class="w-[150px] h-[50px]">
+                                    <div class="heading">
+                                    <p class="text-[1.5rem] font-medium">ClickUp used ToDesktop to get their desktop app in front of customers in days instead of months.</p>
+                                </div>
+                                <div class="buttons flex flex-wrap w-[80%]  items-center justify-start h-fit ">
+                                    <div class="div flex flex-row bg-amber-100 m-1.5 border border-amber-300 rounded-[5px]  w-[160px] items-center">
+                                    <img src="/images/check.png" alt="" width="30px" height="30px">
+                                    <p>Chromeless UI</p>
+                                    </div>
+                                    <div class="div flex flex-row bg-amber-100 m-1.5 border border-amber-300 rounded-[5px]  w-[170px] items-center ">
+                                    <img src="/images/check.png" alt="" width="30px" height="30px">
+                                    <p>Native spellcheck</p>
+                                    </div>
+                                    <div class="div flex flex-row bg-amber-100 m-1.5 border border-amber-300 rounded-[5px] w-[200px]  items-center">
+                                    <img src="/images/check.png" alt="" width="30px" height="30px">
+                                    <p>Task time in menubar</p>
+                                    </div>
+                                    <div class="div flex flex-row bg-amber-100 m-1.5 border border-amber-300 rounded-[5px] w-[250px]  items-center">
+                                    <img src="/images/check.png" alt="" width="30px" height="30px">
+                                    <p>Notification count in the dock</p>
+                                    </div>
+                                    <div class="div flex flex-row bg-amber-100 m-1.5 border border-amber-300 rounded-[5px] w-[250px] items-center">
+                                    <img src="/images/check.png" alt="" width="30px" height="30px">
+                                    <p>Global hotkey to create task</p>
+                                    </div>
+                                </div>
+                                <div class="details ">
+                                    <p class="font-light text-[1.2rem]">“ToDesktop provided us with a polished desktop app in no time. Their expert team guided us through a smooth migration from our outdated legacy desktop app, enabling us to deliver new and improved features to our customers within days.”</p>
+                                </div>
+                                <div class="profile-id flex flex-row gap-4 w-fit justify-between md:ml-5 md:mt-3">
+                                    <img src="/images/asset 45.jpeg" alt="" class="rounded-3xl" height="50px" width="50px">
+                                    <div class="prof-detail">
+                                        <p class="font-medium text-[1.1rem]">Zeb Evanz</p>
+                                        <p class="font-light text-[1rem]">Founder & CEO, ClickUp</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="img h-[50%] w-[80%] flex items-center justify-center">
+                                <img src="/images/asset 46.png" alt="" class="w-[500px] h-[60%]">
+                            </div>
+                        </div>
+                        <!-- first banner ends here  -->
+                         <!-- 3 cards start -->
+                         <div class="native-api bg-white  border border-slate-400 col-start-1 col-end-2 row-start-3 row-end-5 h-full flex justify-evenly flex-col gap-5 p-4 rounded-[20px] hover:bg-gradient-to-b from-purple-50 via-orange-50 to-transparent">
+                            <div class="heading flex flex-row gap-3 justify-start items-center">
+                                <img src="/images/transfer.png" alt="" class="w-[60px] h-[60px] bg-sky-200 rounded-4xl p-3">
+                                <p class="text-[1.7rem] font-medium">Native APIs</p>
+                            </div>
+                            <p class="text-[1.2rem] font-light">What sets ToDesktop apart is its seamless integration with native APIs using our existing web codebase. By tapping into APIs like Tray and Notifications, we've crafted an exceptionally polished desktop user experience.</p>
+                            <div class="profile flex flex-row items-center gap-3">
+                                <img src="/images/asset 47.png" alt="" class="w-[60px] h-[60px] rounded-2xl">
+                                <img src="/images/asset 48.jpeg" alt="" class="w-[50px] h-[50px] rounded-3xl ml-[-30px]">
+                                <div class="prof-detail">
+                                    <p class="font-medium text-[1.1rem]/[17px]">Rick Pastoor</p>
+                                    <p class="font-light text-[1rem] hover:underline">Rise</p>
+                                </div>
+                            </div>
+                         </div>
+                         <div class="native-api bg-white  border border-slate-400 col-start-2 col-end-3  row-start-3 row-end-5 h-full flex justify-evenly flex-col gap-5 p-4 rounded-[20px]  hover:bg-gradient-to-b from-purple-50 via-orange-50 to-transparent">
+                            <div class="heading flex flex-row gap-3 justify-start items-center">
+                                <img src="/images/transfer.png" alt="" class="w-[60px] h-[60px] bg-sky-200 rounded-4xl p-3">
+                                <p class="text-[1.7rem] font-medium">Native APIs</p>
+                            </div>
+                            <p class="text-[1.2rem] font-light">What sets ToDesktop apart is its seamless integration with native APIs using our existing web codebase. By tapping into APIs like Tray and Notifications, we've crafted an exceptionally polished desktop user experience.</p>
+                            <div class="profile flex flex-row items-center gap-3">
+                                <img src="/images/asset 47.png" alt="" class="w-[60px] h-[60px] rounded-2xl">
+                                <img src="/images/asset 48.jpeg" alt="" class="w-[50px] h-[50px] rounded-3xl ml-[-30px]">
+                                <div class="prof-detail">
+                                    <p class="font-medium text-[1.1rem]/[17px]">Rick Pastoor</p>
+                                    <p class="font-light text-[1rem] hover:underline">Rise</p>
+                                </div>
+                            </div>
+                         </div>
+                         <div class="native-api bg-white border border-slate-400  col-start-3 col-end-4  row-start-3 row-end-5 h-full flex justify-evenly flex-col gap-5 p-4 rounded-[20px]  hover:bg-gradient-to-b from-purple-50 via-orange-50 to-transparent">
+                            <div class="heading flex flex-row gap-3 justify-start items-center">
+                                <img src="/images/transfer.png" alt="" class="w-[60px] h-[60px] bg-sky-200 rounded-4xl p-3">
+                                <p class="text-[1.7rem] font-medium">Native APIs</p>
+                            </div>
+                            <p class="text-[1.2rem] font-light">What sets ToDesktop apart is its seamless integration with native APIs using our existing web codebase. By tapping into APIs like Tray and Notifications, we've crafted an exceptionally polished desktop user experience.</p>
+                            <div class="profile flex flex-row items-center gap-3">
+                                <img src="/images/asset 47.png" alt="" class="w-[60px] h-[60px] rounded-2xl">
+                                <img src="/images/asset 48.jpeg" alt="" class="w-[50px] h-[50px] rounded-3xl ml-[-30px]">
+                                <div class="prof-detail">
+                                    <p class="font-medium text-[1.1rem]/[17px]">Rick Pastoor</p>
+                                    <p class="font-light text-[1rem] hover:underline">Rise</p>
+                                </div>
+                            </div>
+                         </div>
+                             <!-- 3 cards start -->
+                           <!-- 2nd clickup here     -->
+                           <div class="clickup bg-black flex flex-col md:flex-row w-full h-fit p-4 md:p-6  justify-evenly items-center gap-6 row-start-6 row-end-8 col-start-1 col-end-4 rounded-2xl ">
+                            <div class="description flex flex-col h-full gap-8 justify-evenly w-[80%] ">
+                                <p class="font-medium text-[1rem] text-[#9ca3af] ">READY TO START BUILDING?</p>
+                                <div class="heading w-[90%]">
+                                    <p class="text-[3.2rem]/[50px] font-medium text-white">Create your desktop app for free*</p>
+                                </div>
+                                <div class="details ">
+                                    <p class="font-medium text-[1.2rem] text-[#9ca3af]">“ToDesktop Builder will take you step-by-step through the process of creating your first desktop app in just a few minutes.”</p>
+                                </div>
+                                <button class="bg-blue-700 flex justify-center items-center opacity-[100%] h-[50px] gap-2 rounded-[15px] hover:opacity-[95%] cursor-pointer">
+                                    <img src="/images/ooooooooooooooooooooooooooooooooooo.png" alt="" class="w-[30px] h-[30px] text-white">
+                                    <p  class="text-white text-[0.8rem] flex justify-between items-center sm:text-[1rem] font-medium" >Download ToDesktop Builder</p>
+                                </button>
+                                <p class="font-medium text-[0.8rem] text-[#9ca3af] font-serif">*You can create a desktop app and run it on your computer for free. You will only be charged if you want to create a distributable app for your customers.</p>
+                            </div>
+                            <div class="img h-[50%] w-[80%] flex items-center justify-center">
+                                <img src="/images/asset 46.png" alt="" class="w-[500px] h-[60%]">
+                            </div>
+                        </div>
+                           <!-- 2nd clickup here     -->
+                    </div>
+                </section>
+               <!-- section 08 ends  -->
+            <!-- section 09 starts (Choose plan)  -->
+            <section class="section-03 w-full max-w[[1500px] h-fit p-6 m-2 flex justify-center sm:justify-start ">
+                <p class="text-[2.5rem]/[50px] font-medium text-slate-800">Choose a plan that fits <br> your needs</p>
+            </section>
+               <!-- section 09 ends  -->
+                <!-- section 10 starts (pricing)  -->
+                 <section class=" h-fit w-full max-w-[1700px] flex justify-center items-center">
+                    <div class="gridDiv  flex flex-col w-full h-fit max-w-[1500px] md:grid grid-cols-3 gap-8 justify-center items-center p-4 ">
+                        <div class="divs bg-[#f2f2f2] w-full col-start-1 col-end-2 row-start-1 row-end-3 flex flex-col p-7 gap-3 rounded-[10px] border border-slate-400 ">
+                            <h1 class="text-[3rem] " >Free</h1>
+                            <P class="text-[1.2rem] font-light">For personal use or testing your app before deploying to customers.</P>
+                            <p class="font-medium text-[1.2rem] p-2">KEY FEATURES</p>
+                            <ul>
+                                <li class="flex flex-row w-full  items-center p-1 gap-2"><img src="/images/check.png" alt="" class="w-[20px] h-[20px]"><p class="font-light text-[1.2rem]">Free for personal use</p></li>
+                                <li class="flex flex-row w-full  items-center p-1 gap-2"><img src="/images/check.png" alt="" class="w-[20px] h-[20px]"><p class="font-light text-[1.2rem]">Free for personal use</p></li>
+                                <li class="flex flex-row w-full  items-center p-1 gap-2"><img src="/images/2997911.png" alt="" class="w-[10px] h-[10px] m-1"><p class="font-light text-[1.2rem]">Free for personal use</p></li>
+                                <li class="flex flex-row w-full  items-center p-1 gap-2"><img src="/images/2997911.png" alt="" class="w-[10px] h-110px] m-1"><p class="font-light text-[1.2rem]">Free for personal use</p></li>
+                            </ul>
+                            <button class="w-full bg-white text-blue-600 text-[1.1rem] border border-slate-400 rounded-[10px] p-3 mt-3 font-medium hover:border-black ">Read Docs</button>
+                        </div>
+                        <div class="divs bg-[#f2f2f2] w-full col-start-2 col-end-3 row-start-1 row-end-3 flex flex-col p-6 gap-2 rounded-[10px] border border-slate-400 ">
+                            <h1 class="text-[2.8rem] " >Essential</h1>
+                            <P class="text-[1.2rem] font-light">For simple desktop apps.</P>
+                            <p class="font-medium text-[1.8rem] p-2">$99/month</p>
+                            <p class="font-medium text-[1.2rem] p-2">KEY FEATURES</p>
+                            <ul>
+                                <li class="flex flex-row w-full  items-center p-1 gap-2"><img src="/images/check.png" alt="" class="w-[20px] h-[20px]"><p class="font-light text-[1.2rem]">Free for personal use</p></li>
+                                <li class="flex flex-row w-full  items-center p-1 gap-2"><img src="/images/check.png" alt="" class="w-[20px] h-[20px]"><p class="font-light text-[1.2rem]">Free for personal use</p></li>
+                                <li class="flex flex-row w-full  items-center p-1 gap-2"><img src="/images/2997911.png" alt="" class="w-[10px] h-[10px] m-1"><p class="font-light text-[1.2rem]">Free for personal use</p></li>
+                                <li class="flex flex-row w-full  items-center p-1 gap-2"><img src="/images/2997911.png" alt="" class="w-[10px] h-110px] m-1"><p class="font-light text-[1.2rem]">Free for personal use</p></li>
+                            </ul>
+                            <button class="w-full bg-white text-blue-600 text-[1.1rem] border border-slate-400 rounded-[10px] p-3 mt-3 font-medium hover:border-black ">Read Docs</button>
+                        </div>
+                        <div class="divs bg-[#f2f2f2] w-full col-start-3 col-end42 row-start-1 row-end-3 flex flex-col p-6 gap-2 rounded-[10px] border border-slate-400 ">
+                            <h1 class=" text-[2.8rem] md:text-[2.2rem] lg:text-[2.8rem] " >Professional</h1>
+                            <P class="text-[1.2rem] font-light">For sophisticated desktop apps.</P>
+                            <p class="font-medium text-[1.8rem] p-2">$199/year</p>
+                            <p class="font-medium text-[1.2rem] p-2">KEY FEATURES</p>
+                            <ul>
+                                <li class="flex flex-row w-full  items-center p-1 gap-2"><img src="/images/check.png" alt="" class="w-[20px] h-[20px]"><p class="font-light text-[1.2rem]">Free for personal use</p></li>
+                                <li class="flex flex-row w-full  items-center p-1 gap-2"><img src="/images/check.png" alt="" class="w-[20px] h-[20px]"><p class="font-light text-[1.2rem]">Free for personal use</p></li>
+                                <li class="flex flex-row w-full  items-center p-1 gap-2"><img src="/images/2997911.png" alt="" class="w-[10px] h-[10px] m-1"><p class="font-light text-[1.2rem]">Free for personal use</p></li>
+                                <li class="flex flex-row w-full  items-center p-1 gap-2"><img src="/images/2997911.png" alt="" class="w-[10px] h-110px] m-1"><p class="font-light text-[1.2rem]">Free for personal use</p></li>
+                            </ul>
+                            <button class="w-full bg-blue-700 text-white text-[1.1rem] border border-slate-400 rounded-[10px] p-3 mt-3 font-medium opacity-[100%] hover:opacity-[95%] cursor-pointer ">Read Docs</button>
+                        </div>
+                    </div>
+                 </section>
+                <!-- section 10 ends (pricing)  -->
+                <!-- section 11 starts (FAQ heading)  -->
+                 <section class="w-full max-w-[1450px] h-fit  p-1">
+                    <p class="text-[3rem] font-medium p-2 ml-3" >FAQs</p>
+                 </section>
+                <!-- section 11 ends   -->
+                <!-- section 12 starts (FAQ items in grid)  -->
+                 <section class="flex h-fit w-full max-w-[1700px] p-2 items-center justify-center" >
+                    <div class="girDiv flex flex-col md:grid grid-cols-2 w-full h-fit  gap-4 justify-between items-center p-4 ">
+                        <!-- Peer added for dropdown description  -->
+                         <div class="div  flex flex-col gap-2 p-5 border border-slate-400 items-center justify-start col-start-1 col-end-2 row-start-1 row-end-2 w-full bg-[#f2f2f2] rounded-[10px] cursor-pointer ">
+                            <input type="checkbox" id="faq1" class="peer hidden">
+                            <label for="faq1" class="flex flex-row w-full justify-between  items-center cursor-pointer">
+                                <p class="text-[1.1rem] font-medium">Is ToDesktop For Me?</p>
+                                <img src="/images/32195.png" alt="" class="w-[15px] h-[15px]">
+                            </label>
+                            <div class="peer-checked:block hidden pt-2 border-t text-[1rem] ">
+                                That depends! If you would like to distribute your web app to your users as a downloadable desktop app then ToDesktop is for you.
+                            </div>
+                         </div>
+                         <!-- --------------------- -->
+                         <div class="div  flex flex-col gap-2 p-5 border border-slate-400 items-center justify-start col-start-2 col-end-3 row-start-1 row-end-2 w-full bg-[#f2f2f2] rounded-[10px] cursor-pointer ">
+                            <input type="checkbox" id="faq21" class="peer hidden">
+                            <label for="faq21" class="flex flex-row w-full justify-between  items-center cursor-pointer">
+                                <p class="text-[1.1rem] font-medium">Is ToDesktop For Me?</p>
+                                <img src="/images/32195.png" alt="" class="w-[15px] h-[15px]">
+                            </label>
+                            <div class="peer-checked:block hidden pt-2 border-t text-[1rem] ">
+                                That depends! If you would like to distribute your web app to your users as a downloadable desktop app then ToDesktop is for you.
+                            </div>
+                         </div>
+                         <!-- --------------------- -->
+                         <div class="div  flex flex-col gap-2 p-5 border border-slate-400 items-center justify-start col-start-1 col-end-2 row-start-2 row-end-3 w-full bg-[#f2f2f2] rounded-[10px] cursor-pointer ">
+                            <input type="checkbox" id="faq321" class="peer hidden">
+                            <label for="faq321" class="flex flex-row w-full justify-between  items-center cursor-pointer">
+                                <p class="text-[1.1rem] font-medium">Is ToDesktop For Me?</p>
+                                <img src="/images/32195.png" alt="" class="w-[15px] h-[15px]">
+                            </label>
+                            <div class="peer-checked:block hidden pt-2 border-t text-[1rem] ">
+                                That depends! If you would like to distribute your web app to your users as a downloadable desktop app then ToDesktop is for you.
+                            </div>
+                         </div>
+                         <!-- --------------------- -->
+                         <div class="div  flex flex-col gap-2 p-5 border border-slate-400 items-center justify-start col-start-2 col-end-3 row-start-2 row-end-3 w-full bg-[#f2f2f2] rounded-[10px] cursor-pointer ">
+                            <input type="checkbox" id="faq4" class="peer hidden">
+                            <label for="faq4" class="flex flex-row w-full justify-between  items-center cursor-pointer">
+                                <p class="text-[1.1rem] font-medium">Is ToDesktop For Me?</p>
+                                <img src="/images/32195.png" alt="" class="w-[15px] h-[15px]">
+                            </label>
+                            <div class="peer-checked:block hidden pt-2 border-t text-[1rem] ">
+                                That depends! If you would like to distribute your web app to your users as a downloadable desktop app then ToDesktop is for you.
+                            </div>
+                         </div>
+                         <!-- --------------------- -->
+                         <div class="div  flex flex-col gap-2 p-5 border border-slate-400 items-center justify-start col-start-1 col-end-2 row-start-3 row-end-4 w-full bg-[#f2f2f2] rounded-[10px] cursor-pointer ">
+                            <input type="checkbox" id="faq5" class="peer hidden">
+                            <label for="faq5" class="flex flex-row w-full justify-between  items-center cursor-pointer">
+                                <p class="text-[1.1rem] font-medium">Is ToDesktop For Me?</p>
+                                <img src="/images/32195.png" alt="" class="w-[15px] h-[15px]">
+                            </label>
+                            <div class="peer-checked:block hidden pt-2 border-t text-[1rem] ">
+                                That depends! If you would like to distribute your web app to your users as a downloadable desktop app then ToDesktop is for you.
+                            </div>
+                         </div>
+                         <!-- --------------------- -->
+                         <div class="div  flex flex-col gap-2 p-5 border border-slate-400 items-center justify-start col-start-2 col-end-3 row-start-3 row-end-4 w-full bg-[#f2f2f2] rounded-[10px] cursor-pointer ">
+                            <input type="checkbox" id="faq6" class="peer hidden">
+                            <label for="faq6" class="flex flex-row w-full justify-between  items-center cursor-pointer">
+                                <p class="text-[1.1rem] font-medium">Is ToDesktop For Me?</p>
+                                <img src="/images/32195.png" alt="" class="w-[15px] h-[15px]">
+                            </label>
+                            <div class="peer-checked:block hidden pt-2 border-t text-[1rem] ">
+                                That depends! If you would like to distribute your web app to your users as a downloadable desktop app then ToDesktop is for you.
+                            </div>
+                         </div>
+                         <!-- --------------------- -->
+                        <!-- Peer code  -->
+                    </div>
+                 </section>
+                <!-- section 12 ends (faq)  -->
+                <!-- section 13 satrts (last container of main)  -->
+                 <section class="w-full h-fit flex flex-nowrap max-w-[1500px] m-6 justify-center items-center">
+                    <div class="container flex flex-col-reverse md:flex-row justify-between m-4 w-full p-8 border border-slate-400 rounded-[10px] bg-[#f2f2f2]">
+                        <div class="logo flex flex-row gap-1 p-2 justify-center items-center">
+                            <img src="/images/asset 0.png" alt="" sizes="" srcset="">
+                            <p class="text-[1.3rem] font-medium">ToDesktop</p>
+                        </div>
+                        <div class="socials flex flex-row items-center justify-center m-4 md:justify-evenly gap-8 ">
+                            <img src="/images/twitter.png" alt="" class="w-[30px] h-[30px]">
+                            <img src="/images/github.png" alt="" class="w-[30px] h-[30px]">
+                            <p class="font-light text-[1.2rem]">Documention</p>
+                        </div>
+                    </div>
+                 </section>
+                <!-- section 13 ends  -->
+         </main>
+         <!-- main ends  -->
+          <!-- footer starts  -->
+         <footer class="w-full h-fit max-w-[1600px] flex flex-col p-14 gap-3 ">
+            <div class="part-1 flex flex-row justify-center  items-center flex-wrap gap-4 p-2 text-center">
+                <img src="/images/Y.svg" alt="" class="w-[20px] h-[20px] mt-[2px]">
+                <p class="font-medium text-[1.3rem]">A Y Combinator company.</p>
+            </div>
+            <div class="part-2 flex justify-center items-center text-center">
+                <p class="font-medium">© 2024 ToDesktop, Inc. All rights reserved.</p>
+            </div>
+         </footer>
+         <!-- footer ends  -->
+    </div>
+    <!-- wrapper ends  -->
+</body>
+</html>
